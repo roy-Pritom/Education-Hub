@@ -13,7 +13,7 @@ Before you run locally, ensure that you must have the following requirements:
 
 ## Getting Started
 
-1. **First clone the repository:**
+<!-- 1. **First clone the repository:**
 
    ```bash
    git clone https://github.com/Porgramming-Hero-web-course/l2b2-full-stack-a5-server-side-roy-Pritom
@@ -83,4 +83,4 @@ Before you run locally, ensure that you must have the following requirements:
    
 
 
-  
+   -->
