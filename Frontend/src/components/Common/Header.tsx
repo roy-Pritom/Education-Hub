@@ -189,7 +189,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
-  const user = '';
+  const user = '4';
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -236,18 +236,28 @@ const Header = () => {
   const navITem = <>
     {
       user ?
-        <div className="flex items-center gap-3">
-          <Button onClick={handleLogout} className="border-none">Logout</Button>
-          <Link href='/user-profile'>
-            <Avatar />
+        <div className="flex items-center gap-4">
+           <Link href="/subjects" className="hover:text-red-500">
+            <button className="border-none ">Subjects</button>
           </Link>
+          <Link href="/login" className="hover:text-red-500">
+            <button className="border-none ">Assessments</button>
+          </Link>
+          <Link href="/login" className="hover:text-red-500">
+            <button className="border-none ">Leaderboard</button>
+          </Link>
+          <Link href="/login" className="hover:text-red-500">
+            <button className="border-none ">Chat</button>
+          </Link>
+            <button onClick={handleLogout} className="border-none hover:text-red-500 ">Logout</button>
+          
         </div>
         :
         <div className="flex items-center gap-3">
-          <Link href={"/login"} className="hover:text-blue-700">
-            <button className="border-none">LogIn</button>
+          <Link href="/login" className="hover:text-red-500">
+            <button className="border-none ">LogIn</button>
           </Link>
-          <Link href={"/register"} className="hover:text-blue-700">
+          <Link href="/register" className="hover:text-red-500">
             <button className="border-none">Sign Up</button>
           </Link>
         </div>
@@ -258,13 +268,13 @@ const Header = () => {
     <header
       className={`${scrolling
         ? "bg-white dark:bg-slate-800 fixed w-full z-40"
-        : "fixed w-full z-40 bg-blue-400 md:text-white"
+        : "fixed w-full z-40 bg-[#00507B] md:text-white shadow-xl"
         }`}
     >
       <div className="container mx-auto py-3 flex md:justify-center justify-between items-center md:px-5 px-2 gap-5">
         <div className="">
           <div className="flex items-center justify-center gap-3 ">
-            <Link href={"/"} className="text-lg text-white  hover:text-blue-700">
+            <Link href="/" className="text-lg   hover:text-red-500">
               Home
             </Link>
         
