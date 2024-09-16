@@ -14,6 +14,9 @@ const config: Config = {
         exotwo: ['"Exo 2"', "sans-serif"],
         viga: ['"Viga"', "sans-serif"],
       },
+      colors:{
+        secondaryBackgroundColor:"#E1E6E6"
+      }
     },
   },
   darkMode: "class",

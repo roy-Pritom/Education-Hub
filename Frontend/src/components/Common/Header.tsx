@@ -240,7 +240,7 @@ const Header = () => {
            <Link href="/subjects" className="hover:text-red-500">
             <button className="border-none ">Subjects</button>
           </Link>
-          <Link href="/login" className="hover:text-red-500">
+          <Link href="/assessments" className="hover:text-red-500">
             <button className="border-none ">Assessments</button>
           </Link>
           <Link href="/login" className="hover:text-red-500">
